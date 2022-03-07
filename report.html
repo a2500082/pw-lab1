@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Relatório</title>
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
-</head>
-<body>
-    <h1>A Internet e a Web</h1>
-    <p><a href="index.html">Programação Web</a>  <a href="report.html">A Internet e a Web</a></p>
-    <p></p>
-    <p>Aprender-se-ão as seguintes tecnologias &#127760;: </p>
-    <ul>
-        <li></li>
-    </ul>
-</body>  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Relatório</title>
+        <link rel="stylesheet" type="text/css" href="resources/styles.css">
+        <link rel="stylesheet" type="text/css" href="resources/tab.css">
+        <script src="resources/script.js"></script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Programação Web</a>
+            <a href="report.html" class="active">A Internet e a Web</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="divContent">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'divMyPC')">My PC:IP</button>
+                <button class="tablinks" onclick="openTab(event, 'divHeroku')">Heroku:IP</button>
+                <button class="tablinks" onclick="openTab(event, 'divMySite')">Site:IP</button>
+                <button class="tablinks" onclick="openTab(event, 'divMySiteTrace')">Site:TraceCert</button>
+                <button class="tablinks" onclick="openTab(event, 'divMySiteTraceGeo')">Site:TraceGeo</button>
+                <button class="tablinks" onclick="openTab(event, 'divMySiteDevTool')">Site:DevTools</button>
+            </div>    
+            <!-- Tab content -->
+            <div id="divMyPC" class="tabcontent" style="display: block;">
+                <img src="resources/images/myIp.png" title="PC IP">
+            </div>
+            <div id="divHeroku" class="tabcontent">
+                <img src="resources/images/herokuIp.png" title="Heroku IP">
+            </div>
+            <div id="divMySite" class="tabcontent">
+                <img src="resources/images/herokuMySiteIp.png" title="My Site IP">
+            </div>
+            <div id="divMySiteTrace" class="tabcontent">
+                <img src="resources/images/traceRoute.png" title="My Site TraceCert">
+            </div>
+            <div id="divMySiteTraceGeo" class="tabcontent">
+                <img src="resources/images/geotrace.png" title="My Site Trace Geo">
+            </div>
+            <div id="divMySiteDevTool" class="tabcontent">
+                <img src="resources/images/devTool.png" title="My Site Developer Tool">
+            </div>                                    
+        </div>
+    </body>  
 </html>
