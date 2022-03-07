@@ -3,6 +3,8 @@ h1 {color: #1f4872; font-size: 1.4em;}
 h2 {color: #1f4872; font-size: 1.2em;}
 h3 {color: #1f4872; font-size: 1.1em;}
 img {max-width: 100%; height: auto;}
+ul{padding-inline-start: 17px;}
+ul ul{padding-inline-start: 34px;}
 
 /* Style the links inside the navigation bar */
 .topnav {overflow: hidden; border-bottom: 1px solid #1f4872;}
