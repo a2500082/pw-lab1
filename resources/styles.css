@@ -1,4 +1,9 @@
-@import "reset.css";
+html {line-height: 1.10em; font-size: 0.8em; font-family: Verdana, Geneva;}
+h1 {color: #1f4872; font-size: 1.4em;}
+h2 {color: #1f4872; font-size: 1.2em;}
+h3 {color: #1f4872; font-size: 1.1em;}
+img {max-width: 100%; height: auto;}
+
 /* Style the links inside the navigation bar */
 .topnav {overflow: hidden; border-bottom: 1px solid #1f4872;}
 .topnav a {
@@ -15,13 +20,14 @@
     border-bottom: none;
 }
 .topnav a:first-child{border-top-left-radius: 5px;}
+.topnav a:last-child{border-top-right-radius: 5px;}
 /* Change the color of links on hover */
 .topnav a:hover {background-color: #ddd; color: black; text-decoration: underline;}
 /* Add an active class to highlight the current page */
 .topnav a.active {background-color: #1f4872; color: white;}
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {display: none;}
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+.topnav .icon {display: none; height: 14px;}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) 
 {
     .topnav a:not(:first-child) {display: none;}
